@@ -1,0 +1,19 @@
+fun integer10 (x:Int){
+    var x1:Int
+    var x2:Int
+    var x3:Int
+
+    if (x>=100){
+        x1 = x / 100
+        x2 = x % 100 / 10
+        x3 = x % 10
+        println("последняя цифра трехзначного числа $x3")
+        println("среднее число,  десятки $x2")
+        println("Первая цифра в номере $x1")
+    } else
+        println("Номер указан неверно")
+}
+
+fun main() {
+    println(integer10(readLine()!!.toInt()))
+}
